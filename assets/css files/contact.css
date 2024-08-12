@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background: #111;
+    width: 100%;
+    height: 16vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 254, 254, 0.4) 100%);
+    width: 970px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+    border-radius: 24px;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: #8300b6;
+    text-decoration: none;
+}
+
+/* Dark mode button  */
+.mode-btn {
+    padding: 2px 5px;
+    border: 2px solid #8300b6;
+    border-radius: 10px;
+    color: #8300b6;
+    border: none;
+    cursor: pointer;
+}
+
+.mode-btn:hover {
+    color: rgba(77, 228, 255);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.search-bar {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    margin-right: -10px;
+}
+
+.search-input {
+    padding: 1px;
+    margin-right: 5px;
+    border-radius: 8px;
+    border: 2px solid #8300b6;
+}
+
+.search-input:hover {
+    border: 2px solid rgba(77, 228, 255);
+}
+
+.search-button {
+    padding: 2px 5px;
+    border: 2px solid #8300b6;
+    border-radius: 10px;
+    color: #8300b6;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    color: rgba(77, 228, 255);
+}
+
+
+nav .nav-items {
+    display: flex;
+    gap: 50px;
+    margin-left: 205px;
+}
+
+nav .nav-items .nav-link:hover {
+    border: 1px solid black;
+    border-radius: 7px;
+    transition: 0.3s;
+    text-decoration: underline;
+    color: rgba(77, 228, 255);
+}
+
+/* section  */
+.titleh {
+    margin-top: 130px;
+    margin-bottom: -150px;
+    margin-left: 100px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.container input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btnsr {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.34s ease-in;
+}
+
+.btnsr:hover {
+    transform: translateY(-5px);
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 7px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 180px;
+    width: 1100px;
+    margin-left: 95px;
+}
+
+.container label {
+    color: #111;
+}
+
+/* Footer  */
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    margin-top: 3rem;
+    background: #111;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer-container .sec {
+    margin-right: -40px;
+    margin-left: 45px;
+}
+
+.footer-container .sec.aboutus {
+    width: 40%;
+}
+
+.footer-container h2 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-container h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(77, 228, 255);
+}
+
+footer p {
+    color: #999;
+    margin-right: 200px;
+}
+
+.quicklinks {
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks ul li {
+    list-style: none;
+}
+
+.quicklinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.quicklinks ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-container .contactBx {
+    width: calc(22% - 68px);
+    margin-right: 0 !important;
+}
+
+.contactBx .info {
+    position: relative;
+}
+
+.contactBx .info li {
+    display: flex !important;
+    margin-bottom: 16px;
+}
+
+.info li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.34s ease-in;
+}
+
+.info li a:hover {
+    transform: translateY(-5px);
+    background: rgb(77, 228, 255);
+    color: #8300b6;
+}
+
+.info i a .bx {
+    color: #fff;
+    font-size: 20px;
+}
+
+hr {
+    width: 110%;
+}
+
+.footerline {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}

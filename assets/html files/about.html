@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css files/about.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <nav class="animate__animated wow animate__zoomIn">
+            <a href="#" class="logo">Blogger</a>
+            <button class="mode-btn" onclick="darkMode()"><i class="bx bx-brightness-half">
+                </i></button>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search here...">
+                <button class="search-button"><i class="bx bx-search"></i></button>
+                <div class="nav-items">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="./index.html#allposts">Posts</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </div>
+        </nav>
+    </header>
+    <section>
+        <h2 class='titlea'>About Us:</h2>
+        <div class="contentBx">
+
+            <div>
+                <h3>What is an API?</h3>
+                <p>An API, or application programming interface, is a set of rules or protocols that enables software
+                    applications to communicate with each other to exchange data, features and functionality.
+                </p> <br>
+            </div>
+            <div>
+                <h3>Components:</h3>
+                <p>
+                <ul>
+                    <li><b>Endpoints: </b> Specific URLs where requests can be sent.</li>
+                    <li><b>Methods: </b> HTTP methods like GET, POST, PUT, DELETE that define the type of action to be
+                        performed.</li>
+                    <li><b>Requests and Responses: </b> Data sent to and received from the API. Requests include
+                        parameters
+                        or payloads, and responses return data.</li>
+                </ul>
+                </p> <br>
+            </div>
+            <h3>Random Image API</h3>
+            <p>The Random Image API generates random images for all your placeholder and design needs. It supports
+                custom sizes as well as custom image categories.</p> <br>
+            <h3>Endpoint</h3>
+            <p><a href="https://api-ninjas.com/api/randomimage"
+                    target="_blank">https://api-ninjas.com/api/randomimage</a></p> <br>
+            <h3>JSONPlaceholder API:</h3>
+            <p>Free fake and reliable API for testing and prototyping.</p> <br>
+            <h3>Endpoint</h3>
+            <p><a href="https://jsonplaceholder.typicode.com" target="_blank">https://jsonplaceholder.typicode.com</a>
+            </p> <br>
+            <h3>Resources:</h3>
+            <P>JSONPlaceholder comes with a set of 6 common resources: <br><br>
+
+                <span>1. <a href="https://jsonplaceholder.typicode.com/posts" target="_blank">/posts</a> &nbsp; 100
+                    posts </span> <br>
+                <span>2. <a href="https://jsonplaceholder.typicode.com/comments" target="_blank">/comments</a> &nbsp;
+                    500 </span>
+                comments <br>
+                <span>3. <a href="https://jsonplaceholder.typicode.com/albums" target="_blank">/albums</a> &nbsp; 100
+                    albums </span> <br>
+                <span>4. <a href="https://jsonplaceholder.typicode.com/photos" target="_blank">/photos</a> &nbsp; 5000
+                    photos </span>
+                <br>
+                <span>5. <a href="https://jsonplaceholder.typicode.com/todos" target="_blank">/todos</a> &nbsp; 200
+                    todos </span> <br>
+                <span>6. <a href="https://jsonplaceholder.typicode.com/users" target="_blank">/users</a> &nbsp; 10 users
+                </span>
+            </P> <br>
+            <h3>Note:</h3>
+            <p>Resources have relations. For example: users have many todos, posts, albums. posts have many comments.
+                albums have many photos.</p>
+        </div>
+        <div class="imgBx">
+            <img src="./assets/images/st-img.jpg" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer>
+        <div>
+            <div class="footer-container">
+                <div class="sec aboutus animate__animated wow animate__slideInLeft">
+                    <h2>Blogger</h2>
+                    <p>Discover how to integrate APIs into your application.</p>
+                </div>
+                <div class="sec quicklinks animate__animated wow animate__slideInUp">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href=".../index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./index.html#allposts">Posts</a></li>
+                    </ul>
+                </div>
+                <div class="sec contactBx animate__animated wow animate__slideInRight">
+                    <h2>Social Links</h2>
+                    <ul class="info">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <!-- <li><a href="#"><i class="bx bxl-instagram"></i></a></li> -->
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerline animate__animated wow animate__slideInUp">
+                <hr><br>
+                Copyright &copy; www.blogger.com. ALL rights reserved!
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript  -->
+    <script src="/assets/js files/about.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        // Dark Mode 
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>

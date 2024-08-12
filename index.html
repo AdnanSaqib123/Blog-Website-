@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navbar container  -->
+    <header class="animate__animated wow animate__zoomIn">
+        <nav>
+            <a href="#" class="logo">Blogger</a>
+            <button class="mode-btn" onclick="darkMode()"><i class="bx bx-brightness-half">
+                </i></button>
+
+            <div id="searching-bar" class="search-bar">
+                <input type="text" class="search-input" placeholder="Search here...">
+                <button class="search-button"><i class="bx bx-search"></i></button>
+                <div class="nav-items">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="./assets/html files/about.html">About</a>
+                    <a class="nav-link" href="#allposts">Posts</a>
+                    <a class="nav-link" href="./assets/html files/contact.html">Contact</a>
+                </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title animate__animated wow animate__slideInLeft"> Blogger</h2>
+            <p class="home-subtitle animate__animated wow animate__slideInRight">Discover how to integrate
+                APIs into your application.</p><br>
+            <button class="btn-home animate__animated wow animate__zoomIn"><a href="#allposts">Get Started</a></button>
+        </div>
+    </section>
+
+    <section id="allposts">
+
+        <div class="post-filter  animate__animated wow animate__zoomIn container">
+            <span class="filter-item  active-filter" data-filter="all">Latest Posts</span>
+
+        </div><br>
+
+        <div class="post post-box container">
+
+            <div class="grid-container post-box" id="post-data-container">
+                <!-- User data will be dynamically added here -->
+            </div>
+
+            <!-- Comments Popup Container -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span id="closePopupBtn" class="close-btn">&times;</span>
+                    <div class="grid-container1" id="comment-data-container">
+                        <h2 class="h2class">Comments</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Todos Popup Container -->
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <span id="closePopupBtn2" class="close-btn">&times;</span>
+                    <div class="grid-container1" id="todo-data-container">
+                        <h2 class="h2class">Todos</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            <div class="footer-container">
+                <div class="sec aboutus animate__animated wow animate__slideInLeft">
+                    <h2>Blogger</h2>
+                    <p>Discover how to integrate APIs into your application.</p>
+                </div>
+                <div class="sec quicklinks animate__animated wow animate__slideInUp">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./assets/html files/about.html">About</a></li>
+                        <li><a href="#allposts">Posts</a></li>
+                    </ul>
+                </div>
+                <div class="sec contactBx animate__animated wow animate__slideInRight">
+                    <h2>Social Links</h2>
+                    <ul class="info">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerline animate__animated wow animate__slideInUp">
+                <hr><br>
+                Copyright &copy; www.blogger.com. ALL rights reserved!
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

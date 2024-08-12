@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css files/contact.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <nav class="animate__animated wow animate__zoomIn">
+            <a href="#" class="logo">Blogger</a>
+            <button class="mode-btn" onclick="darkMode()"><i class="bx bx-brightness-half">
+                </i></button>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search here...">
+                <button class="search-button"><i class="bx bx-search"></i></button>
+                <div class="nav-items">
+                    <a class="nav-link" href="..../index.html">Home</a>
+                    <a class="nav-link" href="./about.html">About</a>
+                    <a class="nav-link" href="./index.html#allposts">Posts</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+        </nav>
+    </header>
+    <!-- section  -->
+    <section>
+        <h2 class='titleh'>Contact Us:</h2>
+        <div class="container">
+            <form>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+
+                <label for="lname">E-Mail:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email..">
+
+                <label for="subject">Subject:</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+                <button class="btnsr" type="submit">Submit</button>
+                <button class="btnsr" type="reset">Reset</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer  -->
+    <footer>
+        <div>
+            <div class="footer-container">
+                <div class="sec aboutus animate__animated wow animate__slideInLeft">
+                    <h2>Blogger</h2>
+                    <p>Discover how to integrate APIs into your application.</p>
+                </div>
+                <div class="sec quicklinks animate__animated wow animate__slideInUp">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./assets/html files/about.html">About</a></li>
+                        <li><a href="./index.html#allposts">Posts</a></li>
+                    </ul>
+                </div>
+                <div class="sec contactBx animate__animated wow animate__slideInRight">
+                    <h2>Social Links</h2>
+                    <ul class="info">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <!-- <li><a href="#"><i class="bx bxl-instagram"></i></a></li> -->
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerline animate__animated wow animate__slideInUp">
+                <hr><br>
+                Copyright &copy; www.blogger.com. ALL rights reserved!
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript  -->
+    <script src="/assets/js files/contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        // Dark Mode 
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
